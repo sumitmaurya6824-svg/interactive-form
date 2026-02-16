@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Simple Form Validation</title>
+  <title>Form Validation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="box">
 
-  <h2>Register</h2>
+  <h2>Login Form</h2>
 
   <form onsubmit="return validate()">
 
-    <input type="text" id="name" placeholder="Enter Name">
+    <div class="row">
+      <label>Username</label>
+      <input type="text" id="name">
+    </div>
     <span id="nerr"></span>
 
-    <input type="text" id="email" placeholder="Enter Email">
+    <div class="row">
+      <label>Email</label>
+      <input type="text" id="email">
+    </div>
     <span id="eerr"></span>
 
-    <input type="password" id="pass" placeholder="Enter Password">
+    <div class="row">
+      <label>Password</label>
+      <input type="password" id="pass">
+    </div>
     <span id="perr"></span>
 
     <button type="submit">Submit</button>
