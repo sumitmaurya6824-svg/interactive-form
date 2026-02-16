@@ -4,8 +4,12 @@ function validate() {
   let e = document.getElementById("email").value;
   let p = document.getElementById("pass").value;
 
+  console.log("Username:", n);
+  console.log("Email:", e);
+  console.log("Password:", p);
+
   if (n == "") {
-    document.getElementById("nerr").innerHTML = "Enter name";
+    document.getElementById("nerr").innerHTML = "Enter username";
     return false;
   }
 
@@ -19,5 +23,6 @@ function validate() {
     return false;
   }
 
+  console.log("Form submitted successfully ✅");
   alert("Form submitted successfully");
 }
