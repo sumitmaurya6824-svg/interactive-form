@@ -60,7 +60,6 @@ input:focus {
 
 /* Button */
 button {
-  margin-top: 22px;
   width: 100%;
   padding: 11px;
   background: linear-gradient(to right, #6c63ff, #5a54e6);
@@ -71,6 +70,7 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
+
 
 /* Button hover animation */
 button:hover {
