@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+
+  <h2>Register</h2>
+
+  <form onsubmit="return validate()">
+
+    <input type="text" id="name" placeholder="Enter Name">
+    <span id="nerr"></span>
+
+    <input type="text" id="email" placeholder="Enter Email">
+    <span id="eerr"></span>
+
+    <input type="password" id="pass" placeholder="Enter Password">
+    <span id="perr"></span>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
