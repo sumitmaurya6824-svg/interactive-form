@@ -1,38 +1,74 @@
 body {
-  font-family: Arial;
-  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 0;
 }
 
 .box {
-  background: white;
-  padding: 25px;
-  width: 260px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px gray;
+  background: #ffffff;
+  padding: 30px;
+  width: 340px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+h2 {
   text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+label {
+  width: 90px;
+  font-weight: bold;
+  color: #444;
 }
 
 input {
-  width: 90%;
+  flex: 1;
   padding: 8px;
-  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #6c63ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
 }
 
 button {
-  padding: 8px 15px;
-  background: teal;
+  margin-top: 18px;
+  width: 100%;
+  padding: 10px;
+  background: #6c63ff;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 15px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+  background: #574fd6;
 }
 
 span {
   color: red;
   font-size: 12px;
-  display: block;
+  margin-left: 90px;
 }
