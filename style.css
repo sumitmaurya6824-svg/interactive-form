@@ -8,67 +8,79 @@ body {
   margin: 0;
 }
 
+/* Card */
 .box {
   background: #ffffff;
-  padding: 30px;
-  width: 340px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  padding: 35px;
+  width: 360px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
 h2 {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #333;
 }
 
+/* Row layout */
 .row {
   display: flex;
   align-items: center;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 label {
-  width: 90px;
+  width: 95px;
   font-weight: bold;
   color: #444;
 }
 
+/* Inputs */
 input {
   flex: 1;
-  padding: 8px;
+  padding: 9px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 7px;
   transition: 0.3s;
 }
 
-/* Input focus effect */
+/* Focus glow */
 input:focus {
   border-color: #6c63ff;
   outline: none;
-  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
 }
 
+/* Button */
 button {
-  margin-top: 18px;
+  margin-top: 22px;
   width: 100%;
-  padding: 10px;
-  background: #6c63ff;
+  padding: 11px;
+  background: linear-gradient(to right, #6c63ff, #5a54e6);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 7px;
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-/* Button hover effect */
+/* Button hover animation */
 button:hover {
-  background: #574fd6;
+  background: linear-gradient(to right, #5a54e6, #6c63ff);
+  transform: scale(1.02);
 }
 
+/* Error messages */
 span {
   color: red;
   font-size: 12px;
-  margin-left: 90px;
+  margin-left: 95px;
 }
